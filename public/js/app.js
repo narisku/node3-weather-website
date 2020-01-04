@@ -1,5 +1,3 @@
-console.log('Print from server side by app.js')
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const msgError = document.querySelector('#message-1')
