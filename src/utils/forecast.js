@@ -21,9 +21,13 @@ const forecast = (latitude , longitude , callback) => {
             //Success 
             
             const data = {
+    
                 summary:  body.currently.summary , 
                 timezone: body.timezone,
-                temperature: body.currently.temperature
+                temperature: body.currently.temperature,
+                lowTemp: body.daily.data[0].temperatureLow,
+                highTemp: body.daily.data[0].temperatureHigh
+
             }
             callback(undefined, data)
         }

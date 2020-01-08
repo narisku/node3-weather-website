@@ -26,7 +26,7 @@ weatherForm.addEventListener('submit' ,(e)=>{
                 console.log(data.error)
                 msgError.textContent = data.error
             }else{
-                msgTemperature.textContent = data.forecast + " " + data.temperature
+                msgTemperature.textContent = data.forecast + " " + data.temperature + ". Highest Temperature on this day is " + data.highTemperature + " : Low Temperature on this day is " + data.lowTemperature
                 msgTimezone.textContent = data.timezone  
                 msgAddress.textContent = data.address
                 msgError.textContent = ''

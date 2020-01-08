@@ -69,7 +69,9 @@ app.get('/weather', ( req , res ) => {
               forecast: forecastData.summary,
               timezone: forecastData.timezone,
               temperature: forecastData.temperature ,
-              address: city
+              address: city, 
+              lowTemperature: forecastData.lowTemp, 
+              highTemperature: forecastData.highTemp
             })
         })
     })
