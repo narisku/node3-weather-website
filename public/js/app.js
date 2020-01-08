@@ -5,7 +5,7 @@ const msgTemperature = document.querySelector('#message-2')
 const msgAddress = document.querySelector('#message-3')
 const msgTimezone = document.querySelector('#message-4')
 
-const url = '/weather?.address='
+const url = 'http://localhost:3000/weather?address='
 
 weatherForm.addEventListener('submit' ,(e)=>{
     e.preventDefault()

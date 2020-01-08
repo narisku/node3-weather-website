@@ -46,6 +46,7 @@ app.get('/help', (req, res)=>{
 app.get('/weather', ( req , res ) => {
    
     const address = req.query.address
+
     if(!address){
             return res.send({
                 error: 'Please provide an address term'
